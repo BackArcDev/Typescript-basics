@@ -27,6 +27,8 @@ enum Color { Rojo = 'rojito', Verde = 'verdecito', Azul = 'azulito' }
 let c: Color = Color.Verde
 console.log(`Color selected is ${c}.`)
 
+enum State { Accepted, Rejected, WaitList, Incapacitated, Rest }
+
 // Any
 let noSeguro: any = 4
 noSeguro = "tal vez una cadena"
@@ -52,3 +54,21 @@ function crear(o: object | null): void {
 }
 crear({ prop: 0 }) // OK
 crear(null) // OK
+
+let objetito: {
+    readonly _id: number, name?: string, exists: boolean
+} = {
+    _id: 1, name: 'Vogel', exists: true
+}
+
+// objetito._id = 0 // No se puede
+console.log(`Objeto creado manualmente: ${objetito}.`)
+
+// Types: A better way to create objects
+type Student = {
+    readonly _id: number, name?: string, actualState: State, exists: boolean
+}
+
+let si: Student = {
+    _id: 0, name: 'Vogel', actualState: State.Accepted, exists: true
+}

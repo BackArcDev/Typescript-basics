@@ -10,3 +10,5 @@ const b: number = Number(process.argv[3])
 
 console.log(`Sum result of ${a} and ${b} is ${a+b}.`)
 
+// Parsings //
+const c: number = parseInt(process.argv[2])

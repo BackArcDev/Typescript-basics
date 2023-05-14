@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ts": "ts-node app/parsing.ts",
+    "ts": "ts-node app/types.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

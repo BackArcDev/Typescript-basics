@@ -24,8 +24,8 @@ x = ["hola", 10] // OK
 // Enum
 // enum Color {Rojo, Verde, Azul}
 enum Color { Rojo = 'rojito', Verde = 'verdecito', Azul = 'azulito' }
-let c: Color = Color.Verde
-console.log(`Color selected is ${c}.`)
+let colorcito: Color = Color.Verde
+console.log(`Color selected is ${colorcito}.`)
 
 enum State { Accepted, Rejected, WaitList, Incapacitated, Rest }
 
